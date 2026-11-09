@@ -46,10 +46,10 @@ export function valorAbsoluto(n) {
 // ✍️ 4.1 · Multiplica 1 · 2 · 3 · … · n (el factorial).  factorial(4) → 24 · factorial(1) → 1
 //          Ojo: un acumulador que MULTIPLICA no puede empezar en 0.
 export function factorial(n) { 
-  let fact =  1;
+  let acumulador =  1;
   for (let i = 1; i <= n; i++) {
-    fact *= i;
-} return fact;
+    acumulador *= i;
+} return acumulador;
   throw new Error("Sin hacer");
 }
 
@@ -79,7 +79,13 @@ let numero = 0;
 // ✍️ 4.4 · ¿Cuántas vocales tiene un texto? (a, e, i, o, u, en minúscula). Un for que va de 0 a texto.length - 1
 //          y mira cada letra: texto[i].   "aeiou".includes(letra) dice si letra es una vocal.
 //          contarVocales("murcielago") → 5
-export function contarVocales(texto) {
+export function contarVocales(texto) { 
+  let vocals = 0;
+  for (let i = 0; i < texto.length; i++) {
+  if ("aeiou".includes(texto[i])) {
+    vocals ++;
+  }
+} return vocals;
   throw new Error("Sin hacer");
 }
 

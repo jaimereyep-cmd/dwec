@@ -104,6 +104,11 @@ export function tablaDel(n) {
 
 // ✍️ 4.6 · ¿Cuántas veces hay que duplicar una cantidad para llegar (o pasar) a una meta? Con while.
 //          vecesParaLlegar(1, 10) → 4   (1 → 2 → 4 → 8 → 16: 4 veces)      vecesParaLlegar(5, 5) → 0
-export function vecesParaLlegar(cantidad, meta) {
+export function vecesParaLlegar(cantidad, meta) { 
+  let contador = 0;
+  while (cantidad < meta) {
+  cantidad = cantidad * 2;
+  contador ++;
+} return contador;
   throw new Error("Sin hacer");
 }

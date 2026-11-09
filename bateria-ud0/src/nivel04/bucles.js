@@ -91,7 +91,14 @@ export function contarVocales(texto) {
 
 // ✍️ 4.5 · La tabla de multiplicar de n, del 1 al 10, una línea por resultado («\n» es un salto de línea):
 //          tablaDel(2) → "2 x 1 = 2\n2 x 2 = 4\n … \n2 x 10 = 20"    (sin \n después de la última línea)
-export function tablaDel(n) {
+export function tablaDel(n) { 
+  let resultado = "";
+  for (let i = 1; i <= 10; i++) {
+    resultado += `${n} x ${i} = ${n * i}`;
+    if (i < 10) {
+    resultado += "\n";
+  }
+  } return resultado;
   throw new Error("Sin hacer");
 }
 

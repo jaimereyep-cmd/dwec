@@ -48,7 +48,10 @@ export const cuadrado = (n) => {
 };
 
 // ✍️ 5.2 · saludar(nombre): "Hola, " + nombre. Si no le pasan nombre, que use "desconocido" (parámetro por defecto).
-//          saludar("Ana") → "Hola, Ana" · saludar() → "Hola, desconocido" 
+//          saludar("Ana") → "Hola, Ana" · saludar() → "Hola, desconocido"
+export function saludar(nombre = "desconocido") {
+  return "Hola, " + nombre;
+}
 // ✍️ 5.3 · hipotenusa(a, b): la raíz cuadrada de a² + b². USA tu función cuadrado. La raíz: Math.sqrt(x)
 //          hipotenusa(3, 4) → 5
 

@@ -67,7 +67,10 @@ export function aplicarDescuento(precio, porcentaje) {
 }
 
 // ✍️ 5.5 · redondear(n): n con 2 decimales como mucho.  redondear(12.3456) → 12.35 · redondear(3) → 3
-//          Truco: Math.round(n * 100) / 100     (Math.round redondea al entero más cercano)
+//          Truco: Math.round(n * 100) / 100     (Math.round redondea al entero más cercano) 
+export function redondear(n) {
+  return Math.round(n * 100) / 100;
+}
 
 // ✍️ 5.6 · precioFinal(precio, porcentaje): primero el descuento, luego el 21 % de IVA, y redondeado a 2 decimales.
 //          USA tus funciones aplicarDescuento y redondear.  precioFinal(80, 25) → 72.6 · precioFinal(9.99, 10) → 10.88

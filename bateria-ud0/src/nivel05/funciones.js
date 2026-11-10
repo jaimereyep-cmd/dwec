@@ -61,6 +61,10 @@ export function hipotenusa(a, b) {
 
 // ✍️ 5.4 · aplicarDescuento(precio, porcentaje): el precio con ese descuento.  aplicarDescuento(80, 25) → 60
 //          (el 25 % de 80 es 80 * 25 / 100 = 20, y 80 - 20 = 60)
+export function aplicarDescuento(precio, porcentaje) {
+  let descuento = precio * porcentaje / 100;
+  return precio - descuento;
+}
 
 // ✍️ 5.5 · redondear(n): n con 2 decimales como mucho.  redondear(12.3456) → 12.35 · redondear(3) → 3
 //          Truco: Math.round(n * 100) / 100     (Math.round redondea al entero más cercano)

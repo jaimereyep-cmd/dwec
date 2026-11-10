@@ -42,11 +42,13 @@ export function sumaPares(n) {
 // ✍️ TU TURNO ─────────────────────────────────────────────────────────────────────────────────
 // Desde aquí escribes la función ENTERA debajo de su comentario: export, nombre, parámetros y return.
 
-// ✍️ 5.1 · cuadrado(n): el número por sí mismo, como función FLECHA.  cuadrado(4) → 16
+// ✍️ 5.1 · cuadrado(n): el número por sí mismo, como función FLECHA.  cuadrado(4) → 16 
+export const cuadrado = (n) => {
+  return n * n;
+};
 
 // ✍️ 5.2 · saludar(nombre): "Hola, " + nombre. Si no le pasan nombre, que use "desconocido" (parámetro por defecto).
-//          saludar("Ana") → "Hola, Ana" · saludar() → "Hola, desconocido"
-
+//          saludar("Ana") → "Hola, Ana" · saludar() → "Hola, desconocido" 
 // ✍️ 5.3 · hipotenusa(a, b): la raíz cuadrada de a² + b². USA tu función cuadrado. La raíz: Math.sqrt(x)
 //          hipotenusa(3, 4) → 5
 

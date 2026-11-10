@@ -53,7 +53,11 @@ export function saludar(nombre = "desconocido") {
   return "Hola, " + nombre;
 }
 // ✍️ 5.3 · hipotenusa(a, b): la raíz cuadrada de a² + b². USA tu función cuadrado. La raíz: Math.sqrt(x)
-//          hipotenusa(3, 4) → 5
+//          hipotenusa(3, 4) → 5 
+export function hipotenusa(a, b) {
+  let calculo = Math.sqrt(cuadrado(a) + cuadrado(b));
+  return calculo;
+}
 
 // ✍️ 5.4 · aplicarDescuento(precio, porcentaje): el precio con ese descuento.  aplicarDescuento(80, 25) → 60
 //          (el 25 % de 80 es 80 * 25 / 100 = 20, y 80 - 20 = 60)

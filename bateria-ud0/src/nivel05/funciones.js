@@ -15,10 +15,10 @@
 
 // 🔮 PREDICCIONES
 export const predicciones = {
-  p1: undefined, // function f(x) { return x + 1; } f(2)
-  p2: undefined, // function g(x) { console.log(x); } g(2)        ← ¿qué DEVUELVE? (si crees que nada, escribe "nada")
-  p3: undefined, // const h = (a, b) => a * b; h(3, 4)
-  p4: undefined, // function s(n = "anónimo") { return "Hola, " + n; } s()
+  p1: 3, // function f(x) { return x + 1; } f(2)
+  p2: "nada", // function g(x) { console.log(x); } g(2)        ← ¿qué DEVUELVE? (si crees que nada, escribe "nada")
+  p3: 12, // const h = (a, b) => a * b; h(3, 4)
+  p4: "Hola, anónimo", // function s(n = "anónimo") { return "Hola, " + n; } s()
 };
 
 // 👀 EJEMPLO RESUELTO ─────────────────────────────────────────────────────────────────────────
@@ -29,7 +29,13 @@ export const perimetroRectangulo = (base, altura) => 2 * (base + altura); // la 
 
 // 🔁 REPASO DEL NIVEL 4 ───────────────────────────────────────────────────────────────────────
 // 🔁 5.r · Suma los números pares del 1 al n.  sumaPares(6) → 2 + 4 + 6 = 12
-export function sumaPares(n) {
+export function sumaPares(n) { 
+  let par = 0;
+  for (let i = 1; i <= n; i++) {
+    if (i % 2 === 0) {
+      par += i;
+    }
+} return par;
   throw new Error("Sin hacer");
 }
 

@@ -73,4 +73,9 @@ export function redondear(n) {
 }
 
 // ✍️ 5.6 · precioFinal(precio, porcentaje): primero el descuento, luego el 21 % de IVA, y redondeado a 2 decimales.
-//          USA tus funciones aplicarDescuento y redondear.  precioFinal(80, 25) → 72.6 · precioFinal(9.99, 10) → 10.88
+//          USA tus funciones aplicarDescuento y redondear.  precioFinal(80, 25) → 72.6 · precioFinal(9.99, 10) → 10.88 
+export function precioFinal(precio, porcentaje) {
+  precio = aplicarDescuento(precio, porcentaje);
+  let iva = precio * 1.21;
+  return redondear(iva);
+}

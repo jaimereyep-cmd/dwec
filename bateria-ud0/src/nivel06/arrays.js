@@ -14,10 +14,10 @@
 
 // 🔮 PREDICCIONES
 export const predicciones = {
-  p1: undefined, // [10, 20, 30][0]
-  p2: undefined, // [10, 20, 30].length
-  p3: undefined, // [10, 20, 30][3]        ← (si crees que no hay nada, escribe "nada")
-  p4: undefined, // const a = [1]; a.push(5); a.length
+  p1: 10, // [10, 20, 30][0]
+  p2: 3, // [10, 20, 30].length
+  p3: "undefined", // [10, 20, 30][3]        ← (si crees que no hay nada, escribe "nada")
+  p4: 2, // const a = [1]; a.push(5); a.length
 };
 
 // 👀 EJEMPLO RESUELTO ─────────────────────────────────────────────────────────────────────────
@@ -38,7 +38,11 @@ export function contarAprobados(notas) {
 }
 
 // 🔁 REPASO DEL NIVEL 5 ───────────────────────────────────────────────────────────────────────
-// 🔁 6.r · Escribe entera la función flecha triple(n), que devuelve n por 3.  triple(4) → 12
+// 🔁 6.r · Escribe entera la función flecha triple(n), que devuelve n por 3.  triple(4) → 12 
+export function triple(n) {
+  const multiplicacion = 3 * n;
+  return multiplicacion
+} 
 
 // ✍️ TU TURNO ─────────────────────────────────────────────────────────────────────────────────
 // ✍️ 6.1 · sumar(lista): la suma de todos los números.  sumar([4, 1, 5]) → 10 · sumar([]) → 0
